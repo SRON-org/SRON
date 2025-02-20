@@ -1,4 +1,12 @@
-# SRON (SRInternet-Object Notation)
+<div align="center">
+
+# SRInternet-Object Notation
+
+基于 JSON 二次改编的新一代轻量级数据交互格式
+
+</div>
+
+## 简介
 
 SRON 是一种对 JSON 格式的扩展，旨在提高其在配置文件和数据交换中的灵活性和可读性。它在保持与标准 JSON 兼容性的同时，引入了类型推断、显式类型覆盖、多行字符串支持等特性，使得配置文件的编写更加方便和强大。
 
@@ -25,7 +33,7 @@ SRON 旨在解决 JSON 在某些场景下的局限性，例如：
 
 ## 规范
 
-SRON 的文件扩展名为 ```.Srd``` （SRInternet-Object Notation Data），其在标准 JSON 的基础上，增加了以下规范：
+SRON 的标准文件扩展名为 ```.Srd``` （SRInternet-Object Notation Data），其在标准 JSON 的基础上，增加了以下规范：
 
 ### 1. 类型推断
 
@@ -144,11 +152,16 @@ SRON 会自动推断以下类型：
 
 ## 使用方法
 
-正在编写中
+我们正在编写 SRON 在 Python 上的标准库和在 .NET Framework 上的 NuGet 包，预计在几个月之内上线，稍后请见 SRON_Python 和 SRON.NET 仓库，敬请期待。
+
+> [!Note]
+>
+> SRON 基于标准 JSON 格式二次改编，因此具有一定的 JSON 兼容性。在我们的标准库和包上线之前，你可以将 SRON 格式当做标准 JSON 格式进行解析，但无法体验到 SRON 的特性功能。
+
 ## 贡献
 
 欢迎提交 Pull Request 来改进 SRON！
 
 ## 许可证
 
-(添加许可证信息)
+我们使用 [MIT Licence](./LICENSE) 来保护我们的规范。
